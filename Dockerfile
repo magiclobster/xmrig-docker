@@ -11,8 +11,9 @@ RUN apt-get update && apt-get -y install \
 	libmicrohttpd-dev \
 	&& apt-get clean && rm -rf /var/lib/apt/lists/*
 
+ARG GIT_TAG
 RUN mkdir /xmrig && mkdir /build && \
-	git clone ${REPO} /build && \
+	git clone --branch ${GIT_TAG} ${REPO} /build && \
 	sed -i  's|constexpr const int kDonateLevel.*|constexpr const int kDonateLevel = 0;|' /build/src/donate.h && \
 	cd /build && cmake . && make && cp xmrig /xmrig/ && rm -rf /build
 

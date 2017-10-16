@@ -3,4 +3,6 @@ services:
   xmrig:
     build:
       context: .
+      args:
+        GIT_TAG: master
     container_name: xmrig
