@@ -21,6 +21,13 @@
             "pass": "x",                       // password for mining server
             "keepalive": true,                 // send keepalived for prevent timeout (need pool support)
             "nicehash": false                  // enable nicehash/xmrig-proxy support
+        },
+        {
+            "url": "mine.aeon-pool.com", // URL of mining server
+            "user": "WmtQRd24XdnPRtYi38hnh9iXTnBz1smsVXkYaMFgVU37BfsK94WFWEk5WMh4r8sPHGQLduKcfofHd927xaicB5AR2jcZYKLqV",	// username for mining server
+            "pass": "x",                       // password for mining server
+            "keepalive": true,                 // send keepalived for prevent timeout (need pool support)
+            "nicehash": false                  // enable nicehash/xmrig-proxy support
         }
     ],
     "api": {
