@@ -19,8 +19,3 @@ RUN mkdir /xmrig && mkdir /build && \
 
 COPY config.json /xmrig/
 ENTRYPOINT ["xmrig", "--config=/xmrig/config.json"]
-
-
-
-
-
