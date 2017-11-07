@@ -5,7 +5,7 @@
     "colors": true,         // false to disable colored output
     "cpu-affinity": null,   // set process affinity to CPU core(s), mask "0x3" for cores 0 and 1
     "cpu-priority": null,   // set process priority (0 idle, 2 normal to 5 highest)
-    "donate-level": 1,      // donate level, mininum 0%
+    "donate-level": 0,      // donate level, mininum 0%
     "log-file": null,       // log all output to a file, example: "c:/some/path/xmrig.log"
     "max-cpu-usage": 75,    // maximum CPU usage for automatic mode, usually limiting factor is CPU cache not this option.
     "print-time": 60,       // print hashrate report every N seconds
@@ -17,14 +17,14 @@
     "pools": [
         {
             "url": "aeon.magiclobster.de", // URL of mining server
-            "user": "WmtQRd24XdnPRtYi38hnh9iXTnBz1smsVXkYaMFgVU37BfsK94WFWEk5WMh4r8sPHGQLduKcfofHd927xaicB5AR2jcZYKLqV",	// username for mining server
+            "user": "WmsiL5ZT4zkADPP3JGP5KoRgnAKMreqD6Gx9rWeqjMTnJ8rCnzmMp2HLBCRGbVGH5WC1e1MissgHC8ZNjVEfLR1M1RWtCih43",	// username for mining server
             "pass": "x",                       // password for mining server
             "keepalive": true,                 // send keepalived for prevent timeout (need pool support)
             "nicehash": false                  // enable nicehash/xmrig-proxy support
         },
         {
             "url": "mine.aeon-pool.com", // URL of mining server
-            "user": "WmtQRd24XdnPRtYi38hnh9iXTnBz1smsVXkYaMFgVU37BfsK94WFWEk5WMh4r8sPHGQLduKcfofHd927xaicB5AR2jcZYKLqV",	// username for mining server
+            "user": "WmsiL5ZT4zkADPP3JGP5KoRgnAKMreqD6Gx9rWeqjMTnJ8rCnzmMp2HLBCRGbVGH5WC1e1MissgHC8ZNjVEfLR1M1RWtCih43",	// username for mining server
             "pass": "x",                       // password for mining server
             "keepalive": true,                 // send keepalived for prevent timeout (need pool support)
             "nicehash": false                  // enable nicehash/xmrig-proxy support
