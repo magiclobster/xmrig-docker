@@ -15,7 +15,7 @@ ARG GIT_TAG
 RUN mkdir /xmrig && mkdir /build && \
 	git clone --branch ${GIT_TAG} ${REPO} /build && \
 	sed -i  's|constexpr const int kDonateLevel.*|constexpr const int kDonateLevel = 0;|' /build/src/donate.h && \
-	cd /build && cmake . && make && cp xmrig /xmrig/ && rm -rf /build
+	cd /build && cmake . && make && cp xmrig /usr/local/bin/ && rm -rf /build
 
 COPY config.json /xmrig/
 ENTRYPOINT ["/xmrig/xmrig", "--config=/xmrig/config.json"]
