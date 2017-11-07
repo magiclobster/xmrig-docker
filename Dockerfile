@@ -18,7 +18,7 @@ RUN mkdir /xmrig && mkdir /build && \
 	cd /build && cmake . && make && cp xmrig /usr/local/bin/ && rm -rf /build
 
 COPY config.json /xmrig/
-ENTRYPOINT ["/xmrig/xmrig", "--config=/xmrig/config.json"]
+ENTRYPOINT ["xmrig", "--config=/xmrig/config.json"]
 
 
 
